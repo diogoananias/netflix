@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Netflix Clone</title>
+
+<!-- Bootstrap -->
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/owl/owl.carousel.min.css" rel="stylesheet" type="text/css">
+<link href="css/owl/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h2 class="logo">NETFLIX</h2>
+    <nav> <a href="#">Início</a> <a href="#">Séries</a> <a href="#">Filmes</a> <a href="#">Documentários</a> </nav>
+  </div>
+</header>
+<main>
+  <div class="filme-principal">
+    <div class="container">
+      <h3 class="titulo">Brooklin 99</h3>
+      <p class="descricao">O brilhante e imaturo detetive Jake Peralta precisa aprender a seguir as regras e trabalhar em equipe quando um capitão exigente assume o comando de seu esquadrão.</p>
+      <div class="botoes">
+        <button class="botao" role="button"><i class="fas fa-play"></i> ASSISTIR AGORA</button>
+        <button class="botao" role="button"><i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES</button>
+      </div>
+    </div>
+  </div>
+</main>
+<div class="carrosel-filmes">
+  <div class="owl-carousel owl-theme">
+	  <div class="item"><img src="imagens/mini01.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini02.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini03.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini04.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini05.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini06.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini07.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini08.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini09.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini10.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini11.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini12.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini13.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini14.jpg" alt=""></div>
+	  <div class="item"><img src="imagens/mini15.jpg" alt=""></div>
+  </div>
+</div>
+	
+	
+<script src="https://kit.fontawesome.com/02a55e0e9d.js" crossorigin="anonymous"></script> 
+<script src="js/owl/jquery.min.js"></script> 
+<script src="js/owl/owl.carousel.min.js"></script> 
+<script>
+	  	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+	  	</script>
+</body>
+</html>
